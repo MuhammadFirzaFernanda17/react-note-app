@@ -1,0 +1,130 @@
+body {
+  background-image: linear-gradient(to right, #97e7e1, #6ad4dd);
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: #fff;
+  color: white;
+}
+
+.navbar__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar__search-bar {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.note-input {
+  margin: 0 auto 48px;
+  max-width: 500px;
+}
+
+.note-input__title {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 12px 0;
+  padding: 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.note-input__body {
+  display: block;
+  width: 100%;
+  min-height: 175px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 12px 0;
+  padding: 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.note-input button {
+  background-color: transparent;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  padding: 8px;
+  width: 100%;
+}
+
+.note-list {
+  list-style-type: none;
+  margin: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 275px);
+  gap: 10px;
+}
+
+.note-item {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  background-color: white;
+  padding: 15px 20px 20px;
+}
+
+.note-item__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.note-item__title {
+  font-size: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.note-item__content {
+  font-size: 15px;
+  color: #666;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.note-item__actions {
+  display: flex;
+  bottom: 50px;
+  align-items: flex-end;
+  color: #999;
+}
+
+.note-item__actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
